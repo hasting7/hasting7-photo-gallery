@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hasting7-photo-gallery/static/css/main.7e63c366.css",
-    "main.js": "/hasting7-photo-gallery/static/js/main.8998eb72.js",
+    "main.js": "/hasting7-photo-gallery/static/js/main.ee8851d8.js",
     "static/js/453.d9ca9f63.chunk.js": "/hasting7-photo-gallery/static/js/453.d9ca9f63.chunk.js",
     "index.html": "/hasting7-photo-gallery/index.html",
     "main.7e63c366.css.map": "/hasting7-photo-gallery/static/css/main.7e63c366.css.map",
-    "main.8998eb72.js.map": "/hasting7-photo-gallery/static/js/main.8998eb72.js.map",
+    "main.ee8851d8.js.map": "/hasting7-photo-gallery/static/js/main.ee8851d8.js.map",
     "453.d9ca9f63.chunk.js.map": "/hasting7-photo-gallery/static/js/453.d9ca9f63.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e63c366.css",
-    "static/js/main.8998eb72.js"
+    "static/js/main.ee8851d8.js"
   ]
 }
