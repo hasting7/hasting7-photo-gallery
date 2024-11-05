@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hasting7-photo-gallery/static/css/main.df2a9698.css",
+    "main.js": "/hasting7-photo-gallery/static/js/main.089fa5b1.js",
+    "static/js/453.d9ca9f63.chunk.js": "/hasting7-photo-gallery/static/js/453.d9ca9f63.chunk.js",
+    "index.html": "/hasting7-photo-gallery/index.html",
+    "main.df2a9698.css.map": "/hasting7-photo-gallery/static/css/main.df2a9698.css.map",
+    "main.089fa5b1.js.map": "/hasting7-photo-gallery/static/js/main.089fa5b1.js.map",
+    "453.d9ca9f63.chunk.js.map": "/hasting7-photo-gallery/static/js/453.d9ca9f63.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df2a9698.css",
+    "static/js/main.089fa5b1.js"
+  ]
+}
