@@ -1,103 +1,99 @@
 /* Container for all images */
 .image-library {
-  display: grid;  /* Use grid layout for a clean library look */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
-  gap: 16px;  /* Space between images */
-  padding: 16px;  /* Padding around the library */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 16px; /* Space between images */
+  padding: 16px; /* Padding around the library */
 }
 
 /* Each image container */
 .image-item {
-  overflow: hidden;  /* Hide overflow to prevent images from exceeding bounds */
-  border-radius: 8px;  /* Rounded corners for a softer look */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
-  background-color: #f8f8f8; /* Light background for better contrast */
+  position: relative; /* Allows absolute positioning of children */
+  overflow: hidden;  
+  border-radius: 8px;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #f8f8f8; 
+  width: 100%; /* Make it responsive */
+  height: 250px; /* Fixed height to maintain consistency */
 }
 
 /* Responsive image styles */
 .image-item img {
-  width: 100%;  /* Make image fill the container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove gap below images */
-  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  width: 100%;  
+  height: 100%; /* Fill container height */
+  display: block; 
+  object-fit: contain; /* Scale to fit without cropping */
 }
 
 /* Style for the empty state */
 .empty-state {
-  text-align: center;  /* Center text for empty state */
-  font-size: 1.2rem;  /* Slightly larger font */
-  color: #777;  /* Grey color for less emphasis */
-  margin-top: 20px; /* Space above the empty state message */
+  text-align: center;  
+  font-size: 1.2rem;  
+  color: #777;  
+  margin-top: 20px; 
 }
+
+/* Upload manager styles */
 .upload-manager {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
+  align-items: center; 
   padding: 20px;
-  border: 2px dashed #007bff; /* Dashed border to indicate upload area */
+  border: 2px dashed #007bff; 
   border-radius: 8px;
-  background-color: #f9f9f9; /* Light background for contrast */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  max-width: 400px; /* Limit max width */
-  margin: 0 auto; /* Center horizontally on the page */
+  background-color: #f9f9f9; 
+  transition: background-color 0.3s; 
+  max-width: 400px; 
+  margin: 0 auto; 
 }
 
 .upload-manager:hover {
-  background-color: #e9f5ff; /* Change background on hover */
+  background-color: #e9f5ff; 
 }
 
 .upload-manager input[type="file"] {
-  margin-bottom: 10px; /* Space between input and button */
+  margin-bottom: 10px; 
   padding: 8px;
-  border: 1px solid #007bff; /* Solid border for file input */
-  border-radius: 4px; /* Rounded corners */
-  width: 100%; /* Full width of the container */
-  cursor: pointer; /* Cursor indicates clickable area */
+  border: 1px solid #007bff; 
+  border-radius: 4px; 
+  width: 100%; 
+  cursor: pointer; 
 }
 
 .upload-manager button {
-  background-color: #007bff; /* Bootstrap primary color */
-  color: white; /* White text for contrast */
-  border: none; /* Remove default border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 10px 20px; /* Vertical and horizontal padding */
-  font-size: 16px; /* Increase font size */
-  cursor: pointer; /* Cursor indicates clickable button */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
 }
 
 .upload-manager button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
 
 .upload-manager p {
-  margin-top: 10px; /* Space above status message */
-  font-size: 14px; /* Font size for status message */
-  color: #333; /* Darker text color for better readability */
-}
-
-/* Styles for individual image items */
-.image-item {
-    position: relative; /* Allows absolute positioning of children */
-    overflow: hidden; /* Optional: Hides overflow in case of large images */
-    width: 200px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
+  margin-top: 10px; 
+  font-size: 14px; 
+  color: #333; 
 }
 
 /* Styles for the delete button */
 .delete-button {
-    position: absolute; /* Position relative to .image-item */
-    top: 5px; /* Position it 5px from the top */
-    right: 5px; /* Position it 5px from the right */
-    color: red; /* Red color for the button */
-    background: transparent; /* No background */
-    border: none; /* Remove border */
-    font-size: 20px; /* Font size for the X */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+  position: absolute; 
+  top: 5px; 
+  right: 5px; 
+  color: red; 
+  background: transparent; 
+  border: none; 
+  font-size: 20px; 
+  cursor: pointer; 
+  transition: color 0.3s; 
 }
 
-/* Hover effect for the delete button */
 .delete-button:hover {
-    color: darkred; /* Darker red on hover */
+  color: darkred; 
 }
