@@ -1,0 +1,52 @@
+
+/* Container for all images */
+.image-library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 16px; /* Space between images */
+  padding: 16px; /* Padding around the library */
+}
+
+/* Each image container */
+.image-item {
+  position: relative; /* Allows absolute positioning of children */
+  overflow: hidden;  
+  border-radius: 8px;  
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2); 
+  background-color: #454545; 
+  width: 100%; /* Make it responsive */
+  height: 250px; /* Fixed height to maintain consistency */
+}
+
+/* Responsive image styles */
+.image-item img {
+  width: 100%;  
+  height: 100%; /* Fill container height */
+  display: block; 
+  object-fit: contain; /* Scale to fit without cropping */
+}
+
+/* Style for the empty state */
+.empty-state {
+  text-align: center;  
+  font-size: 1.2rem;  
+  color: #777;  
+  margin-top: 20px; 
+}
+
+/* Styles for the delete button */
+.delete-button {
+  position: absolute; 
+  top: 5px; 
+  right: 5px; 
+  color: red; 
+  background: transparent; 
+  border: none; 
+  font-size: 20px; 
+  cursor: pointer; 
+  transition: color 0.3s; 
+}
+
+.delete-button:hover {
+  color: darkred; 
+}
