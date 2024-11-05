@@ -2,7 +2,7 @@
   "name": "picture-gallery",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hasting7.github.io/Background-image-manager",
+  "homepage": "https://hasting7.github.io/hasting7-photo-gallery",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
